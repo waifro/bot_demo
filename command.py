@@ -1,22 +1,26 @@
 import hashlib
-import main
 
 class moderate:
 
 	def kick(user):
 		# todo
+		return
 
 	def ban(user):
 		# todo
+		return
 
 	def unban(user):
 		# todo
+		return
 
 	def mute(user):
 		# todo
+		return
 
 	def unmute(user):
 		# todo
+		return
 
 class hash:
 	

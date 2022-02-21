@@ -16,12 +16,12 @@ def check_author_role(message):
 async def verify_author(message):
 
 	# encode string to hex
-	digest_msg = command.hash.sha256(message.author)
+	digest_msg = command.hash.sha256("{}".format(message.author))
 	
 	if digest_msg == message.content:
 
 		# grab the role id
-		role_obj = discord.utils.get(message.guild.roles, name = "verfied")
+		role_obj = discord.utils.get(message.guild.roles, id=883482334140198912)
 
 		# verify user
 		await message.author.add_roles(role_obj)
